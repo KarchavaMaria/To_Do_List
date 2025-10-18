@@ -1,0 +1,26 @@
+@use "../base/mixins" as *;
+
+.filter-todo {
+  @include flex-center(row, space-evenly, center);
+
+  button {
+    margin: 10px;
+    color: #351e76;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(255, 255, 255, 0.7);
+    background-color: transparent;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.4);
+    }
+  }
+}

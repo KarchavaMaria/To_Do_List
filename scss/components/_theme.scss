@@ -1,0 +1,95 @@
+@use "../base/mixins" as *;
+
+body.black-theme {
+  background: linear-gradient(to left, gray, black);;
+
+  h1, p, a, div, button {
+    color: #FAFAFA;
+  }
+
+  .input-panel input, .input-panel button, .task {
+    border: 1px solid white;
+  }
+
+  .input-panel button, .task {
+    background: linear-gradient(to left, gray, black);
+  }
+
+}
+
+body.white-theme {
+  background: white;
+
+  h1 {
+    color: #1A73E8;
+  }
+
+  p, a, div, button, .date {
+    color: #555555;
+  }
+
+  .input-panel input, .input-panel button, .task {
+    border: 1px solid lightskyblue;
+  }
+
+  .input-panel button, .task {
+    background: #E0F7FA;
+  }
+
+  .filter-todo button {
+
+    border-bottom: 2px solid #555555;
+  }
+}
+
+
+body.color-theme {
+  background-image: url("../../assets/img/img_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  h1 {
+    background-image: linear-gradient(to left, #351e76 15%, #e8d0ff 80%);
+    color: transparent;
+    background-clip: text;
+  }
+
+  p, a, button {
+    color: #FAFAFA;
+  }
+
+  .date, div, .filter-todo button {
+    color: #351e76;
+  }
+
+  .input-panel input, .input-panel button, .task {
+    border: 1px solid rgba(99, 50, 116, 0.876);
+  }
+
+  .input-panel button, .task {
+    background: linear-gradient(to left, #351e76, #e8d0ff);
+  }
+}
+
+.theme-container {
+  @include flex-center(row, end, center);
+
+  .theme {
+    padding: 0 20px;
+
+    .white-theme-btn {
+      @include circle(30px, white, 1px solid black);
+    }
+
+    .color-theme-btn {
+      @include circle(30px, rgba(99, 50, 116, 0.876), 1px solid black);
+    }
+
+    .black-theme-btn {
+      @include circle(30px, black, 1px solid black);
+    }
+  }
+}
+

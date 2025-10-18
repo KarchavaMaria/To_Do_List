@@ -1,0 +1,15 @@
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin circle($size:30px, $bg, $border: 1px solid black) {
+  height: $size;
+  width: $size;
+  background-color: $bg;
+  border: $border;
+  border-radius: 50%;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(99, 50, 116, 0.876);
+  height: 30px;
+  width: 70%;
+  margin: 15px auto;
+  padding: 5px 10px;
+  background: linear-gradient(to left, #351e76, #e8d0ff);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}

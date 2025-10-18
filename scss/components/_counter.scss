@@ -1,0 +1,21 @@
+@use "../base/mixins" as *;
+
+div#count {
+  @include flex-center(column, center);
+  font-family: fantasy;
+  font-size: 20px;
+  color: #351e76;
+
+  .all-count {
+    font-size: 25px;
+  }
+
+  .statistics-count {
+    @include flex-center(row, space-between, center);
+
+    div {
+      padding: 20px;
+    }
+  }
+}
+

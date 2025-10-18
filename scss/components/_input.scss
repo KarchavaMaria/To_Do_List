@@ -1,0 +1,28 @@
+@use "../base/mixins" as *;
+
+.input-panel {
+  @include flex-center(row, center, center);
+
+  input {
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    width: 45%;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid rgba(99, 50, 116, 0.876);
+  }
+
+  button {
+    background: linear-gradient(to left, #351e76, #e8d0ff);
+    text-align: center;
+    font-size: medium;
+    color: whitesmoke;
+    border: 1px solid rgba(99, 50, 116, 0.876);
+    cursor: pointer;
+    height: 40px;
+  }
+
+}

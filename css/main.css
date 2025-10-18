@@ -1,0 +1,235 @@
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  font-family: fantasy;
+  font-size: 25px;
+  color: #351e76;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: fantasy;
+  text-align: center;
+  background-image: linear-gradient(to left, #351e76 15%, #e8d0ff 80%);
+  color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1920px;
+}
+
+div#count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  font-size: 20px;
+  color: #351e76;
+}
+
+div#count .all-count {
+  font-size: 25px;
+}
+
+div#count .statistics-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#count .statistics-count div {
+  padding: 20px;
+}
+
+.input-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-panel input {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  box-sizing: border-box;
+  width: 45%;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid rgba(99, 50, 116, 0.876);
+}
+
+.input-panel button {
+  background: linear-gradient(to left, #351e76, #e8d0ff);
+  text-align: center;
+  font-size: medium;
+  color: whitesmoke;
+  border: 1px solid rgba(99, 50, 116, 0.876);
+  cursor: pointer;
+  height: 40px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(99, 50, 116, 0.876);
+  height: 30px;
+  width: 70%;
+  margin: 15px auto;
+  padding: 5px 10px;
+  background: linear-gradient(to left, #351e76, #e8d0ff);
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
+
+.filter-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.filter-todo button {
+  margin: 10px;
+  color: #351e76;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+  font-size: 17px;
+  transition: transform 0.2s ease-in-out, color 0.3s ease;
+}
+
+.filter-todo button:hover {
+  transform: scale(1.1);
+}
+
+.filter-todo button:active {
+  transform: scale(1.4);
+}
+
+body.black-theme {
+  background: linear-gradient(to left, gray, black);
+}
+
+body.black-theme h1, body.black-theme p, body.black-theme a, body.black-theme div, body.black-theme button {
+  color: #FAFAFA;
+}
+
+body.black-theme .input-panel input, body.black-theme .input-panel button, body.black-theme .task {
+  border: 1px solid white;
+}
+
+body.black-theme .input-panel button, body.black-theme .task {
+  background: linear-gradient(to left, gray, black);
+}
+
+body.white-theme {
+  background: white;
+}
+
+body.white-theme h1 {
+  color: #1A73E8;
+}
+
+body.white-theme p, body.white-theme a, body.white-theme div, body.white-theme button, body.white-theme .date {
+  color: #555555;
+}
+
+body.white-theme .input-panel input, body.white-theme .input-panel button, body.white-theme .task {
+  border: 1px solid lightskyblue;
+}
+
+body.white-theme .input-panel button, body.white-theme .task {
+  background: #E0F7FA;
+}
+
+body.white-theme .filter-todo button {
+  border-bottom: 2px solid #555555;
+}
+
+body.color-theme {
+  background-image: url("../../assets/img/img_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body.color-theme h1 {
+  background-image: linear-gradient(to left, #351e76 15%, #e8d0ff 80%);
+  color: transparent;
+  background-clip: text;
+}
+
+body.color-theme p, body.color-theme a, body.color-theme button {
+  color: #FAFAFA;
+}
+
+body.color-theme .date, body.color-theme div, body.color-theme .filter-todo button {
+  color: #351e76;
+}
+
+body.color-theme .input-panel input, body.color-theme .input-panel button, body.color-theme .task {
+  border: 1px solid rgba(99, 50, 116, 0.876);
+}
+
+body.color-theme .input-panel button, body.color-theme .task {
+  background: linear-gradient(to left, #351e76, #e8d0ff);
+}
+
+.theme-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+.theme-container .theme {
+  padding: 0 20px;
+}
+
+.theme-container .theme .white-theme-btn {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-container .theme .color-theme-btn {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(99, 50, 116, 0.876);
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-container .theme .black-theme-btn {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+@use "../base/mixins" as *;
+
+.date {
+  @include flex-center(row, end, center);
+  padding: 20px;
+  font-family: fantasy;
+  font-size: 25px;
+  color: #351e76;
+}
+
+h1 {
+  font-size: 65px;
+  font-family: fantasy;
+  text-align: center;
+  background-image: linear-gradient(to left, #351e76 15%, #e8d0ff 80%);
+  color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  width: 300px;
+}
