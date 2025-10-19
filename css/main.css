@@ -148,7 +148,7 @@ body.white-theme .filter-todo button {
 }
 
 body.color-theme {
-  background-image: url("../../assets/img/img_background.jpg");
+  background-image: url("../assets/img/img_background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
