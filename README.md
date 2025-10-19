@@ -43,6 +43,12 @@ https://kovalyovamaria.github.io/To_Do_List/
 
 <p align="center">
   
+<img width="1439" height="773" alt="Снимок экрана 2025-10-19 в 13 03 47" src="https://github.com/user-attachments/assets/03ed082b-6abe-4217-93a2-26ba63d9fb7f" />
+
+<img width="784" height="661" alt="Снимок экрана 2025-10-19 в 13 04 07" src="https://github.com/user-attachments/assets/46f58fa3-fc25-4539-9015-762b432fba63" />
+
+
+<img width="493" height="660" alt="Снимок экрана 2025-10-19 в 13 04 19" src="https://github.com/user-attachments/assets/baaad35c-3a4f-4b85-b2c8-e4fe3745ef99" />
 
 </p>
 
