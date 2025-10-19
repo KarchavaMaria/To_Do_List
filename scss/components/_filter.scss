@@ -1,7 +1,16 @@
 @use "../base/mixins" as *;
 
 .filter-todo {
-  @include flex-center(row, space-evenly, center);
+
+  #filter-btn {
+    @include flex-center(row, space-evenly, center);
+  }
+
+  #filter-select {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
 
   button {
     margin: 10px;
@@ -22,5 +31,26 @@
     &:active {
       transform: scale(1.4);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-todo {
+
+    #filter-btn {
+      display: none;
+    }
+
+    #filter-select {
+      display: flex !important;
+      opacity: 1;
+    }
+  }
+  select {
+    margin: 20px auto;
+    width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    color: gray;
   }
 }

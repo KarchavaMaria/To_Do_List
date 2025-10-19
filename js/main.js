@@ -2,7 +2,8 @@ let taskNameInput = document.querySelector("#task-name-input");
 let addTaskBtn = document.querySelector("#add-task-btn");
 let startMessage = document.querySelector("#start-message");
 let taskList = document.querySelector(".task-list");
-let filterOption = document.querySelector(".filter-todo");
+let filterOption = document.querySelector(".filter-todo button");
+let filterSelect = document.querySelector("#filter-select");
 let divDate = document.querySelector(".date");
 let deleteAllTaskBtn = document.querySelector("#delete-all-tasks");
 let completedCountEl = document.querySelector(".completed-count");
@@ -13,6 +14,7 @@ let colorTheme = document.querySelector(".color-theme-btn");
 let blackTheme = document.querySelector(".black-theme-btn");
 
 filterOption.addEventListener("click", filterTodo);
+
 addTaskBtn.addEventListener("click", addTaskHandler);
 taskList.addEventListener("click", changeTaskState);
 deleteAllTaskBtn.addEventListener("click", deleteAllTaskHandler);
@@ -23,6 +25,15 @@ blackTheme.addEventListener("click", () => themeHandler("black"));
 taskNameInput.addEventListener("keydown", function (e) {
     if (e.code === "Enter") addTaskHandler();
 })
+
+filterSelect.addEventListener("change", (e) => {
+    if (e.target.value === "deleteAll") {
+        deleteAllTaskHandler();
+        e.target.value = "all";
+    } else {
+        filterTodo(e);
+    }
+});
 
 function loadTasks() {
     let tasks = localStorage.getItem("tasks");

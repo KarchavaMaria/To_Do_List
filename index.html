@@ -36,11 +36,21 @@
 		<button id="add-task-btn">Додати завдання</button>
 	</div>
 	<div>
-		<div class="filter-todo">
-			<button value="all">Всі завдання</button>
-			<button value="completed">Виконанні</button>
-			<button value="uncompleted">Активні</button>
-			<button id="delete-all-tasks">Видалити всі завдання</button>
+		<div class="filter-todo desktop-filter">
+			<div id="filter-btn">
+				<button value="all">Всі завдання</button>
+				<button value="completed">Виконані</button>
+				<button value="uncompleted">Активні</button>
+				<button id="delete-all-tasks">Видалити всі завдання</button>
+			</div>
+		</div>
+		<div class="filter-todo mobile-filter">
+			<select id="filter-select" name="select">
+				<option value="all" selected>Всі завдання</option>
+				<option value="completed">Виконані</option>
+				<option value="uncompleted">Активні</option>
+				<option value="deleteAll">Видалити всі завдання</option>
+			</select>
 		</div>
 	</div>
 	<div class="task-list">
