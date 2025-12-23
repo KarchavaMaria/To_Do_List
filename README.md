@@ -57,4 +57,4 @@ https://kovalyovamaria.github.io/To_Do_List/
 ## 💻 How to Run Locally
 1. Clone the repository:
 ```bash
-git clone https://github.com/KovalyovaMaria/To_Do_List.git
+git clone https://github.com//KarchavaMaria//To_Do_List.git
